@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>にこにこ食堂</title>
+    <meta
+      name="description"
+      content="にこにこ食堂に来ればそこにいる大人達は千差万別です。"
+    />
+    <!--------- CSS --------->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/lib/Remodal/remodal.css"
+      media="screen and (max-width:1100px)"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/lib/Remodal/remodal-default-theme.css"
+      media="screen and (max-width:1100px)"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/lib/Swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <!--------- CSS --------->
+    <!--------- JavaScript --------->
+    <script
+      defer=""
+      src="assets/js/ajax/libs/jquery/3.6.4/jquery.min.js"
+    ></script>
+    <script
+      defer=""
+      src="assets/js/ajax/libs/picturefill/3.0.3/picturefill.min.js"
+    ></script>
+    <script defer="" src="assets/lib/Remodal/remodal.min.js"></script>
+    <script defer="" src="assets/js/common.js"></script>
+    <script
+      defer=""
+      src="assets/lib/matchHeight/jquery.matchHeight.js"
+    ></script>
+    <script defer="" src="assets/lib/Swiper/swiper-bundle.min.js"></script>
+    <script defer="" src="assets/js/index.js"></script>
+    <!--------- JavaScript --------->
+    <!--------- Adobefonts --------->
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "glp8wou",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+    <!--------- Adobefonts --------->
+
+    <link rel="nico_logo" href="assets/img/logo.png" />
+    <link rel="shortcut icon" href="assets/img/favicon.ico" />
+  </head>
+  <body>
+    <!---------------- loading -------------->
+    <!-- <div class="load">
+      <div class="loading">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+      </div>
+    </div> -->
+    <!---------------- loading -------------->
+    <div class="top_space"></div>
+
+    <!---------------- header---------------->
+    <header class="header">
+      <div class="logo">
+        <a href="index.html" class="logo_img">
+          <img src="assets/img/common/header-logo.png" alt="にこにこ食堂" />
+        </a>
+      </div>
+      <nav>
+        <div class="nav_menu">
+          <ul>
+            <li><a href="#top">TOP</a></li>
+            <li><a href="#about">にこにこ食堂</a></li>
+            <li><a href="#support">寄付について</a></li>
+            <li><a href="#lower">NPO法人imitata</a></li>
+            <li><a href="">ご協力企業</a></li>
+          </ul>
+        </div>
+        <div class="nav_contact_btn">
+          <a href="" class="btn_bg"><span>お問い合わせ</span></a>
+        </div>
+      </nav>
+      <button type="button" class="hambuger_btn" data-remodal-target="modal">
+        <img src="assets/img/common/icon_drawer.svg" alt="menu" />
+      </button>
+    </header>
+    <!----------------- header-sp --------------->
+    <div
+      id="myModal"
+      class="remodal"
+      data-remodal-id="modal"
+      data-remodal-options="hashTracking:false closeOnConfirm: true"
+    >
+      <div class="modal_content">
+        <div class="modal_head">
+          <button
+            type="button"
+            class="md_btn_close"
+            data-remodal-action="close"
+          >
+            <span class="line"></span>
+            <span class="line"></span>
+          </button>
+        </div>
+
+        <div class="modal_body">
+          <div class="md_nav">
+            <ul>
+              <li><a id="a_top">TOP</a></li>
+              <li><a href="#about">にこにこ食堂</a></li>
+              <li><a href="#support">寄付について</a></li>
+              <li><a href="#lower">NPO法人imitata</a></li>
+              <li><a href="">ご協力企業</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="modal_foot">
+          <ul class="com_con_list">
+            <li>
+              <a href="contact/index.htm" class="com_btn"
+                >お問い合わせフォーム</a
+              >
+            </li>
+            <li>
+              <a href="tel:052-442-0170" class="com_btn">TEL. 052-442-0170</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <main id="main">
+      <section id="top" class="main_top">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="clip">
+                <div class="swiper_img">
+                  <picture>
+                    <source
+                      media="(max-width:767px)"
+                      srcset="assets/img/index/main_01_sp.jpg"
+                    />
+                    <img src="assets/img/index/main_01.jpg" alt="" />
+                  </picture>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="clip">
+                <div class="swiper_img">
+                  <picture>
+                    <source
+                      media="(max-width:767px)"
+                      srcset="assets/img/index/main_02_sp.jpg"
+                    />
+                    <img src="assets/img/index/main_02.jpg" alt="" />
+                  </picture>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="clip">
+                <div class="swiper_img">
+                  <picture>
+                    <source
+                      media="(max-width:767px)"
+                      srcset="assets/img/index/main_03_sp.jpg"
+                    />
+                    <img src="assets/img/index/main_03.jpg" alt="" />
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <svg
+          viewbox="0 0 1270 700"
+          xmlns="http://www.w3.org/2000/svg"
+          style="position: absolute; top: 0; left: 0"
+          width="0"
+          height="0"
+        >
+          <clippath id="clip_path" clippathunits="objectBoundingBox">
+            <path
+              d="m100 54h-80c-11 0-20 9-20 20v606c0 11 9 20 20 20h1230c11 0 20-9 20-20v-660c0-11-9-20-20-20h-935c-11 0-20 7.65-20 17v17c0 11.05-8.95 20-20 20z"
+              fill="none"
+              transform="scale(0.0007874015748,0.001428571429)"
+            ></path>
+          </clippath>
+        </svg>
+
+        <svg
+          viewbox="0 0 345 500"
+          xmlns="http://www.w3.org/2000/svg"
+          style="position: absolute; top: 0; left: 0"
+          width="0"
+          height="0"
+        >
+          <clippath id="clip_path_sp" clippathunits="objectBoundingBox">
+            <path
+              d="m335 0h-158c-5.52 0-10 4.48-10 10v18c0 5.5-4.5 10-10 10h-147c-5.52 0-10 4.48-10 10v442c0 5.5 4.5 10 10 10h325c5.5 0 10-4.5 10-10v-480c0-5.5-4.5-10-10-10z"
+              fill="none"
+              transform="scale(0.002898550725,0.002)"
+            ></path>
+          </clippath>
+        </svg>
+
+        <img src="assets/img/index/title.png" alt="" class="main_copy fadein" />
+      </section>
+      <section id="about" class="main_about set_pd">
+        <div class="title">
+          <h2 class="name js_fadeup">
+            <img
+              src="assets/img/index/title2.png"
+              alt="1人の子どもに関わる大人は多ければ多いほどいい..."
+            />
+          </h2>
+          <p class="description set_pd_side js_fadeup">
+            1人の子どもに関わる大人は多ければ多いほどいい...
+            <br /><br />
+            笑顔があふれる未来を
+            <br />
+            <br />にこにこ食堂は「 誰もがつながれる地域の居場所 」です。
+          </p>
+
+          <div class="marquee">
+            <div class="marquee-inner">
+              <img
+                class="imagearea"
+                src="assets/img/index/detail_1.jpg"
+                alt="Image 1"
+              />
+              <img
+                class="imagearea"
+                src="assets/img/index/detail_2.jpg"
+                alt="Image 3"
+              />
+              <img
+                class="imagearea"
+                src="assets/img/index/detail_3.jpg"
+                alt="Image 2"
+              />
+              <img
+                class="imagearea"
+                src="assets/img/index/detail_4.jpg"
+                alt="Image 4"
+              />
+              <img
+                class="imagearea"
+                src="assets/img/index/detail_5.jpg"
+                alt="Image 5"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main_detail_1 set_pd">
+        <div class="sup_wrap">
+          <h2 class="sup_ttl com_ttl js_fadeup">
+            地域で見守り、<br class="br_sp" />地域で育てる
+          </h2>
+          <p class="sup_txt com_pd_side js_fadeup">
+            おこがましいですが、<br
+              class="br_pc"
+            />にこにこ食堂で出会う子ども達には人生の引き出しを1つでも
+            多く持って欲しいなと願っています。<br
+              class="br_pc"
+            />そして私達大人のつながりも大切に。地域で共有する時間を大切に思っていいます。
+          </p>
+        </div>
+      </section>
+      <section class="main_detail_2 set_pd">
+        <div class="rec_clm set_wd set_bdrs js_fadeup">
+          <div class="rec_wrap">
+            <h2 class="rec_ttl com_ttl">
+              持続できる活動を<br />目指しています
+            </h2>
+            <p class="rec_txt">
+              子どもが成長する過程において「親と学校の先生」主に周囲にいるのはそういった限られた大人たち。
+              にこにこ食堂に来ればそこにいる大人達は千差万別です。
+              考え方も職業も違う大人達と出会う事で、選択肢が増えていきます。
+            </p>
+          </div>
+        </div>
+      </section>
+      <!----------------- Support ---------------->
+      <section id="support" class="main_contribution set_pd">
+        <div class="content set_wd js_fadeup">
+          <h2 class="name js_fadeup">
+            <img
+              src="assets/img/index/contribution.png"
+              alt="にこにこ食堂は完全ボランティアにて運営しております。"
+            />
+          </h2>
+          <div class="title_wrap set_border">
+            <h2 class="post_ttl com_circle orange f_tsukushi">
+              にこにこ食堂は完全ボランティアにて運営しております。
+            </h2>
+          </div>
+          <div class="content_wrap">
+            <h3 class="content_ttl">
+              PayPay 銀行　ビジネス営業部　支店
+            </h3><br>
+            <h3 class="content_ttl">
+              普通　7030500
+            </h3><br>
+            <h3 class="content_ttl">
+              特定非営利活動法人イミタタニコニコショクドウ
+            </h3>
+            </h3>
+          </div>
+        </div>
+      </section>
+      <!----------------- Support ---------------->
+      <!----------------- low ---------------->
+      <section id="lower" class="main_lower set_pd">
+        <div class="content js_fadeup">
+          <div class="title">
+            <h2 class="name js_fadeup">
+              <img
+                src="assets/img/index/low.png"
+                alt="にこにこ食堂は完全ボランティアにて運営しております。"
+              />
+            </h2>
+          </div>
+          <h3 class="content_outline set_bdrs">
+            認定NPO法人imitataは一般市民を対象とし、子ども食堂を運営、<br>
+そのノウハウの提供を行うことで子どもの健全な育成を行うこと。<br>
+そして、子ども食堂内で行うレクリエーションのノウハウを提供することで、子どもたちとより文化的な交流を行い、<br>
+食材などの寄付を募り、それを適時、連携している子ども食堂に分配することで、<br>
+フードロスを無くし、尚且つ円滑に子ども食堂の運営が行えるように助成していくことを目的としています。
+          </h3>
+          <h3>
+            にこにこ食堂は、子ども食堂の活動を通じて<br>
+            高齢者や障がい者にもやさしく、未来の子どもたちにも豊かな環境を引き継いでいける、<br>
+            そんなまちづくりのお手伝いができればと思い活動しています。
+            </h3>
+            <div class="figure">
+              <h2 class="name js_fadeup">
+                <div>
+                  <img
+                    src="assets/img/index/imitta.png"
+                    alt="にこにこ食堂は完全ボランティアにて運営しております。"
+                  />
+                </div>
+                <div>
+                  <img
+                  src="assets/img/index/mark.png"
+                  alt="にこにこ食堂は完全ボランティアにて運営しております。"
+                />
+                </div>
+              </h2>
+            </div>
+        </div>
+      </section>
+      <!----------------- low ---------------->
+      <!---------------- contact -------------->
+      <section id="contact" class="main_contact set_pd">
+        <div class="con_wrap">
+          <h2 class="con_ttl com_ttl">お問い合わせ</h2>
+          <p class="con_txt">
+            些細なことでも<br class="br_sp" />お気軽にお問い合わせください。
+          </p>
+
+          <ul class="com_con_list">
+            <li>
+              <a href="contact/index.htm" class="com_btn"
+                >お問い合わせフォーム</a
+              >
+            </li>
+            <li>
+              <a href="tel:052-442-0170" class="com_btn tel"
+                >TEL. 052-442-0170</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!---------------- contact -------------->
+    </main>
+    <footer></footer>
+  </body>
+</html>
