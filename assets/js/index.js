@@ -26,7 +26,7 @@ $(function() {
 });
 
 $('#a_top').on('click', function(e) {
-	console.log($('#modal').style);
+	console.log($('#myModal'));
     // $('#modal').style.display('hide');
     // $(document.body).scrollTop($('#top').offset().top);
 });
