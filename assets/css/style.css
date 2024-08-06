@@ -1334,7 +1334,13 @@ nav {
   }
 }
 
-#main .main_lower .content .content_outline{
+#main .main_lower .lower_main_content h3{
+  font-size: 15px;
+  line-height: 2;
+  font-weight: normal;
+}
+
+#main .main_lower .content .content_outline {
   border: 2px solid #f07780;
   padding: 40px 50px 45px;
   margin-top: 50px;
@@ -1346,7 +1352,7 @@ nav {
   }
 }
 
-#main .main_lower .content .figure .name{
+#main .main_lower .content .figure .name {
   display: flex;
   justify-content: space-around;
   width: 1000px;
@@ -1358,5 +1364,3 @@ nav {
     width: 350px;
   }
 }
-
-
